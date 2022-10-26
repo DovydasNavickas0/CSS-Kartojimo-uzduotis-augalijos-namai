@@ -10,13 +10,45 @@ header{
     position: fixed;
     border-bottom: 2px solid black;
     background-color: white;
-    z-index: 99999;
+    z-index:  1;
 }
 .custom-h{
     height: 10%;
 }
 .container-main{
     padding-top: 100px;
+}
+
+.nav-mobile{
+    opacity: 0;
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-menu {
+    position:sticky;
+    margin: 35px auto 0;
+    width: 300px;
+    height: 534px;
+    background-color: white;
+    overflow: hidden;
+    z-index:  1;
+}
+.navbar-label{
+    position: relative;
+    background-color:gray;
+    cursor: pointer;
+}
+#toggle {
+    display: none;
+}
+.a-mobile{
+    text-decoration: none;
+
+    display: inline-block;
+    clear: both;
 }
 
 .background_img{
@@ -30,7 +62,7 @@ header{
 }
 .welcome_box{
     opacity: 1;
-    position: absolute;
+    position: relative;
     border: 3px solid black;
     background-color: white;
     height: 40%;
@@ -63,6 +95,18 @@ a:hover{
 
 @media (max-width: 576px)
 {
+.nav-pc{
+    opacity: 0;
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: black;
+}
+.nav-mobile{
+    opacity: 1;
+    pointer-events: visible;
+    cursor: auto;
+}
 
 }
 

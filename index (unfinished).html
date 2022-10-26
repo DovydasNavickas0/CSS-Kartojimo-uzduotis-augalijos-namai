@@ -9,13 +9,27 @@
 </head>
 <body>
 
-    <header class="container-fluid row w-100 custom-h">
+<header class="navs w-100 custom-h row">
+    <nav class="nav-pc container-fluid">
         <img class="col-1 header-icon" src="icon1.png" alt="website icon" height="95">
-        <a href="index.html" class="col-5 fs-4 vertical-align">augalijos namai</a>
+        <a href="#" class="col-5 fs-4 vertical-align active">augalijos namai</a>
         <a href="gydomieji augalai.html" class="col-2 fs-4 text-center vertical-align">gydomieji augalai</a>
         <a href="nykstantys augalai.html" class="col-2 fs-4 text-center vertical-align">nykstantys augalai</a>
-        <a href="#" class="col-2 fs-4 text-center vertical-align active">miškų nauda</a>
-    </header>
+        <a href="misku nauda.html" class="col-2 fs-4 text-center vertical-align">miškų nauda</a>
+    </nav>
+    <nav class="nav-mobile custom-h">
+        <img class="col-3 header-icon" src="icon1.png" alt="website icon" height="90">
+        <div class="col-6"></div>
+        <input id="toggle" type="checkbox" class=""> 
+        <label class="navbar-label col-2 h-75" for="toggle"></label>
+    </nav>
+    <div class="nav-menu row">
+        <a href="#" class="a-mobile">augalijos namai</a>
+        <a href="gydomieji augalai.html" class="a-mobile">gydomieji augalai</a>
+        <a href="nykstantys augalai.html" class="a-mobile">nykstantys augalai</a>
+        <a href="misku nauda.html" class="a-mobile">miškų nauda</a>
+    </div>
+</header>
 
 <div class="container-main h-100">
     <div class="background_img h-100"></div>
